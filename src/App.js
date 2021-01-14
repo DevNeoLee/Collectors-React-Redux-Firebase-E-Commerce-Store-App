@@ -1,12 +1,13 @@
+import Homepage from './pages/homepage/homepage'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>hello world!</p>
+        <Homepage />
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
