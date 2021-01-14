@@ -6,8 +6,10 @@ const CategoryItem = ({ name}) => {
 
     return (
         <div className={categoryItemStyle.id}>
-            <h1 className={categoryItemStyle.title}> {name.toUpperCase()}</h1>
-          
+            <h3 className={categoryItemStyle.title}> {name.toUpperCase()}</h3>
+            {/* <img src={require('/media-images/animation/cowboy.jpg')} /> */}
+             {/* <img src={require('/logo.png')} /> */}
+            {/* <img src="./media-images/animation/batman.jpg" alt="" width="100px" height="100"/> */}
         </div>
     )
 }
