@@ -1,0 +1,18 @@
+.main {
+    position: absolute;
+    z-index: 3;
+    border: 1px solid rgba(188, 230, 188, 0.603);
+    background-color: rgba(7, 177, 7, 0.503);
+    min-height: 250px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: scroll;
+    width: 170px;
+}
+
+.button {
+    margin-top: auto;
+    margin-bottom: 5px;
+}
