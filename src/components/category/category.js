@@ -6,9 +6,9 @@ import categoryStyle from './category.module.scss'
 
 const Category = ({ items, title }) => {
     return (
-        <div className={categoryStyle.category}>
+        <div className={categoryStyle}>
             <h1 className={categoryStyle.title}> {title.toUpperCase()}</h1>
-                <div className={categoryStyle.item}>
+                <div className={categoryStyle.category}>
                     {items
                     .filter((item, idx) => idx < 4)
                     .map(({ id, ...otherItemProps }) => (
