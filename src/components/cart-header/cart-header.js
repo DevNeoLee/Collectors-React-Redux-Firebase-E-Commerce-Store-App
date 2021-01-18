@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import  toggleCartHidden from '../../redux/cart/cart-actions'
+import { toggleCartHidden } from '../../redux/cart/cart-actions'
 
 import cartHeaderStyle from './cart-header.module.scss'
 import { GiShoppingCart } from 'react-icons/gi'

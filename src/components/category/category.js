@@ -11,8 +11,8 @@ const Category = ({ items, title }) => {
                 <div className={categoryStyle.category}>
                     {items
                     .filter((item, idx) => idx < 4)
-                    .map(({ id, ...otherItemProps }) => (
-                    <CategoryItem key={id} {...otherItemProps} />
+                    .map(( item ) => (
+                    <CategoryItem key={item.id} item={item} />
                     ))}
                 </div>
         </div>
