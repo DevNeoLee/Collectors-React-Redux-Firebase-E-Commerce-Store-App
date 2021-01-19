@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { toggleCartHidden } from '../../redux/cart/cart-actions'
+import { selectCartProductsCount } from '../../redux/cart/cart-selectors'
 
 import cartHeaderStyle from './cart-header.module.scss'
 import { GiShoppingCart } from 'react-icons/gi'
@@ -20,8 +21,8 @@ const mapDispatchToProps = dispatch => ({
     toggleHidden: () => dispatch(toggleCartHidden())
  })
 
-const mapStateToProps = ({ cart: { cartProducts }})=> ({
-    productCount: cartProducts.reduce((countAccumlator, product) => countAccumlator + product.quantity, 0)
+const mapStateToProps = (state)=> ({
+    productCount: selectCartProductsCount(state)
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartHeader)
