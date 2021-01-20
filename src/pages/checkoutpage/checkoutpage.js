@@ -9,7 +9,7 @@ import FormButton from '../../components/form-button/form-button'
 import CheckoutProduct from '../../components/checkout-product/checkout-product'
 
 const CheckoutPage = ({cartProducts, total})=> {
-     console.log("hi", cartProducts)
+     console.log("hi", cartProducts);
     
      return (
          <>
@@ -22,13 +22,13 @@ const CheckoutPage = ({cartProducts, total})=> {
             <div>Total: $ {total}</div>
             <FormButton >Pay</FormButton>
         </>
-     )     
-}
+     );   
+};
 
 const mapStateToProps = createStructuredSelector({
   cartProducts: selectCartProducts,
   total: selectCartTotal
-})
+});
 
 export default connect(mapStateToProps)(CheckoutPage)
 
