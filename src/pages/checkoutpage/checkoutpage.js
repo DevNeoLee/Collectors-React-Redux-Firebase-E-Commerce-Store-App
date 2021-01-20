@@ -2,33 +2,27 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import checkOutPageStyle from './checkoutpage.module.scss'
+import checkoutPageStyle from './checkoutpage.module.scss'
 import { selectCartProducts, selectCartTotal } from '../../redux/cart/cart-selectors';
 
 import FormButton from '../../components/form-button/form-button'
-
+import CheckoutProduct from '../../components/checkout-product/checkout-product'
 
 const CheckoutPage = ({cartProducts, total})=> {
-     console.log(cartProducts)
+     console.log("hi", cartProducts)
     
      return (
          <>
-            <div>check out</div>
+            <CheckoutProduct />
+            <h1>CheckOut Page</h1>
                 {
-            cartProducts.map(product => 
-                <>
-                    <div key={product.id}>{product.id}</div>
-                    <div> {product.name}</div>
-                    <img className={checkOutPageStyle.image} src={product.imageUrl} alt="product image"/>
-                </>
-                )
-            }
+            cartProducts.map(product =>        
+                < CheckoutProduct key={product.id} product={product} />
+            )}
             <div>Total: $ {total}</div>
             <FormButton >Pay</FormButton>
         </>
-     )  
-     
-    
+     )     
 }
 
 const mapStateToProps = createStructuredSelector({
