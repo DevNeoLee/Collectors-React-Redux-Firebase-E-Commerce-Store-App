@@ -14,8 +14,15 @@ export const addProductToCart = (cartProducts, clickedProduct) => {
     }
 };
 
-export const increaseQuantity = (cartProducts, payload) => {
-         return cartProducts.map((product) => {
-                    product.id === payload.id ? {...product, quantity: product.quantity + 1} : product
-    });
+export const reduceQuantity = (cartProducts, payload) => {
+    const targetProduct = cartProducts.find(product => 
+            product.id === payload.id);
+
+    if (targetProduct.quantity === 1) {
+        return cartProducts.filter(product => product.id !== payload.id)
+    } else {
+        return cartProducts.map(product => 
+                    product.id === payload.id ? {...product, quantity: product.quantity - 1} : product
+        );
+    }
 };
