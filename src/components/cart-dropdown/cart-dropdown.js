@@ -12,9 +12,12 @@ import { toggleCartHidden } from '../../redux/cart/cart-actions'
 const CartDropdown = ({ cartProducts, history, dispatch }) => (
   <div className={cartDropdownStyle.main} >
       <h3>Dropdown Cart</h3>
-        {
-          cartProducts.map(product => 
-            <CartItemHeader key={product.id} product={ product }/>)
+      
+        { cartProducts.length ? (
+            cartProducts.map(product => 
+            <CartItemHeader key={product.id} product={ product }/>))
+            : (<span> Cart is empty</span>)
+        
         }
       <div className={cartDropdownStyle.button}>
         <FormButton onClick={() => {
