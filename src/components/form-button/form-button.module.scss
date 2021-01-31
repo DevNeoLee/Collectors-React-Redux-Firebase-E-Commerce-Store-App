@@ -1,3 +1,5 @@
+@import '../../App';
+
 .button {
   min-width: 155px;
   width: auto;
@@ -6,7 +8,7 @@
   line-height: 50px;
   padding: 0 35px 0 35px;
   font-size: 15px;
-  background-color: rgba(16, 101, 180, 0.76);
+  background-color: $primary-color;
   color: white;
   text-transform: uppercase;
   border: none;
@@ -15,7 +17,7 @@
 
   &:hover {
     background-color: white;
-    color: rgba(16, 101, 180, 0.76);
-    border: 1px solid rgba(16, 101, 180, 0.76);
+    color: $primary-color;
+    border: 1px solid $primary-color;
   }
 }

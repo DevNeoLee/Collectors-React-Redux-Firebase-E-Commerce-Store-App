@@ -1,7 +1,39 @@
-.item {
+.container {
     display: flex;
+    text-align: center;
+    // border: 1px solid black;
+    align-items: center;
+    height: 100px;
 }
 
 .image {
-    width: 80px;
+    display: block;
+    height: 50px;
+    padding: 10px 5px;
+    margin: 0 auto;
+    // background-color: aqua;
+}
+
+.detail {
+    display: flex;
+    // flex-direction: horizontal;
+    // background-color: lightblue;
+    align-items: center;
+}
+
+.name {
+    width: 170px;
+}
+
+.price {
+    width: 65px;
+    margin: 10px;
+}
+
+.hr {
+    border: none;
+    height: 1px;
+    color: #ddd; /* old IE */
+    background-color: #ddd; /* Modern Browsers */
+    // box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }

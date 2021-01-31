@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect';
 
 import headerStyle from './header.module.scss'
-import logo from '../../logo.png'
+import logo from '../../logoMain.png'
 
 import { auth } from '../../firebase/utils'
 import CartHeader from '../cart-header/cart-header'
@@ -16,26 +16,28 @@ import { selectCurrentUser } from '../../redux/user/user-selectors'
 const Header = ({ currentUser, hidden }) => (
   <div className={headerStyle.header} >
     <div className={headerStyle.main}>
-      <div className={headerStyle.logo}><Link to="/"><img src={ logo } alt="logo" width={200}/></Link></div>
+      <div className={headerStyle.logo}><Link to="/"><img src={ logo } alt="logo" width={250}/></Link></div>
         <div className={headerStyle.links}>
-            <div className={headerStyle.link}><Link to="/shop">Shop</Link></div>
-            <div className={headerStyle.link}><Link to="/">About</Link></div>
-        </div>
-
-           { currentUser ? 
-          <div onClick={() => auth.signOut() } className={headerStyle.link}>Log out</div>
-          : 
-          <Link to="/login"><div className={headerStyle.link}>Log in</div></Link>
-          }    
-          <div>
+          <div className={headerStyle.link}><Link to="/shop">Movies</Link></div>
+          <div className={headerStyle.link}><Link to="/">About</Link></div>
+          { currentUser ? 
+            <div onClick={() => auth.signOut() } className={headerStyle.link}>Log out</div>
+            : 
+            <div className={headerStyle.link}><Link to="/login">Log in</Link></div>
+          }  
+        </div>  
+        <div>
+          <div className={headerStyle.cartHeader}>
             <CartHeader />
-            {
-              hidden ? null :
-                <CartDropdown />
-            }
           </div>
-    </div>
-    
+          {
+            hidden ? null :
+            <div className={headerStyle.sticky}>
+              <CartDropdown />
+            </div>
+          }
+        </div>
+    </div>  
   </div>
 );
 

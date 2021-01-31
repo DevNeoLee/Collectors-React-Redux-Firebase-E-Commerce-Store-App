@@ -1,3 +1,5 @@
+@import '../../App';
+
 .main {
     display: flex;
     justify-content: space-around;
@@ -6,17 +8,46 @@
 
 .logo {
     // background-color: azure;
+    padding: 12px 0 0 0;
 }
 
 .links {
-    background-color: bisque;
+    // background-color: bisque;
     display: flex;
-    justify-content: flex-end;
-    // width: 300px;
-
+    justify-content: space-between;
+    padding: 37px 0px 0px 0px;
+    // justify-content: flex-end;
+    width: 300px;
 }
 
 .link {
     cursor: pointer;
+    text-decoration: none;
 }
 
+a {
+    color: rgb(12, 12, 12);
+}
+
+a:hover {
+    color: rgba(117, 117, 117, 0.596);
+}
+
+a {
+    text-decoration: none;
+}   
+
+.cartHeader {
+    cursor: pointer;
+}
+
+.dropdown {
+    // position:absolute;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 0;
+    // right: 0;
+}

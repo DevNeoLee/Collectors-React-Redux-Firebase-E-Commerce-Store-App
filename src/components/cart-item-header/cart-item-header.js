@@ -3,13 +3,17 @@ import React from 'react'
 import cartItemHeaderStyle from './cart-item-header.module.scss'
 
 const CartItemHeader = ({ product: { imageUrl, price, name, quantity }}) => (
-        <div className={cartItemHeaderStyle.item}> 
+        <>
+        <div className={cartItemHeaderStyle.container}> 
             <img src={imageUrl} alt="" className={cartItemHeaderStyle.image}/>
             <div className={cartItemHeaderStyle.detail}>
-                <h4>{name}</h4>
-                <p>{quantity} x ${price}</p>
+                <p className={cartItemHeaderStyle.name}>{name.length > 50? name.slice(0, 50) + '...': name}</p>
+                <p className={cartItemHeaderStyle.price}>${price} x {quantity} </p>
             </div>
         </div>
+        <hr className={cartItemHeaderStyle.hr}/>
+        </>
+        
 )
 
 export default CartItemHeader

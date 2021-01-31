@@ -10,6 +10,7 @@ import CheckoutPage from './pages/checkoutpage/checkoutpage'
 
 import Header from './components/header/header'
 
+import appStyle from './App.scss'
 import { auth, createUserProfileDocument } from './firebase/utils'
 import { setCurrentUser } from './redux/user/user-actions'
 import { selectCurrentUser } from './redux/user/user-selectors'

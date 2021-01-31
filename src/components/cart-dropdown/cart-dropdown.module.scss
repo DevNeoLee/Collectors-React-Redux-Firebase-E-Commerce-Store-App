@@ -1,18 +1,42 @@
+@import '../../App';
+
 .main {
     position: absolute;
-    z-index: 3;
-    border: 1px solid rgba(188, 230, 188, 0.603);
-    background-color: rgba(7, 177, 7, 0.503);
+    z-index: 10;
+    border: 1px solid $primary-color;
+    background-color: white;
     min-height: 250px;
     max-height: 300px;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     text-align: center;
     overflow: scroll;
-    width: 170px;
+    width: 290px;
+    padding: 5px;
 }
 
 .button {
     margin-top: auto;
     margin-bottom: 5px;
+}
+
+.empty {
+    min-height: 150px;
+    display: flex;
+    // text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
 }

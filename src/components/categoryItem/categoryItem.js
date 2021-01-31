@@ -13,7 +13,7 @@ const CategoryItem = ( { item, addProduct } ) => {
         <div className={categoryItemStyle.container}>
             <h3 className={categoryItemStyle.title}> { name.toUpperCase() }</h3>
             <img src={imageUrl} alt="" width="200" />
-            <p className={categoryItemStyle.price}>Price: $ { price }</p>
+            <p className={categoryItemStyle.price}>$ { price }</p>
             <FormButton onClick={ () => addProduct(item)}> Collect This </FormButton>
         </div>
     )
