@@ -1,0 +1,16 @@
+.loginpage {
+    // background-color: lightgrey;
+    // padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vl {
+  border-left: 1px solid rgba(211,211,211,0.8);
+  height: 400px;
+  position: absolute;
+  left: 50%;
+//   margin-left: -3px;
+//   top: 0;
+}

@@ -9,6 +9,7 @@ import loginpageStyle from './loginpage.module.scss'
 const Loginpage = () => (
   <div className={loginpageStyle.loginpage} >
     <Login />
+    <div className={loginpageStyle.vl}></div>
     <Signup />
   </div>
 );

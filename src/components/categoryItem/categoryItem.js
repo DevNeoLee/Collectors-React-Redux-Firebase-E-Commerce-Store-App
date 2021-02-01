@@ -14,7 +14,7 @@ const CategoryItem = ( { item, addProduct } ) => {
             <h3 className={categoryItemStyle.title}> { name.toUpperCase() }</h3>
             <img src={imageUrl} alt="" width="200" />
             <p className={categoryItemStyle.price}>$ { price }</p>
-            <FormButton onClick={ () => addProduct(item)}> Collect This </FormButton>
+            <FormButton onClick={ () => addProduct(item)} isProduct > Add to Cart </FormButton>
         </div>
     )
 }

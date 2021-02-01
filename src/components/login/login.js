@@ -40,7 +40,7 @@ class Login extends React.Component {
     render() {
        
         return (
-            <div className={loginStyle.id}>
+            <div className={loginStyle.login}>
                 <h1>Login</h1>
     
                 <form onSubmit={this.handleSubmit}>
@@ -60,9 +60,10 @@ class Login extends React.Component {
                         label='password'
                         required
                     />
-                    <FormButton type='submit'> Sign in </FormButton>
-                    <FormButton onClick={ signInWithGoogle }> Sign in with Google </FormButton>
+                    <FormButton type='submit' >Sign in </FormButton>
+                    
                 </form>
+                <FormButton onClick={ signInWithGoogle } isGoogle > Sign in with</FormButton>
             </div>
         )
     }
