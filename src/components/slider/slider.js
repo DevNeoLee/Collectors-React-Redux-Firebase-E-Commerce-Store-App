@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import sliderStyle from './slider.module.scss';
 import SliderImage from '../slider-image/slider-image';
 import Movie from '../../slider-pics/movie.png';
@@ -17,7 +17,6 @@ const Slider = () => {
     const [x, setX] = useState(0);
 
     const goLeft = () => {
-        console.log(x)
         x === 0 ? 
             setX((sliderArr.length - 1) * -100)
             :
@@ -25,12 +24,16 @@ const Slider = () => {
         };
 
     const goRight= () => {
-        console.log(x)
         x === (sliderArr.length - 1) * -100 ?
             setX(0)
             :
             setX(x - 100)
         };  
+    
+    useEffect(() => {
+        const id = setTimeout(() => goRight(), 3000);
+        return () => clearTimeout(id);
+    }, [x]);
 
     return(
         <div className={sliderStyle.slider}>
