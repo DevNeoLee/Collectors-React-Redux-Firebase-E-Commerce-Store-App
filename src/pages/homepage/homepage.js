@@ -7,16 +7,20 @@ import Slider from '../../components/slider/slider';
 import { withRouter } from "react-router-dom";
 
 class Homepage extends Component {
+    constructor(props) {
+        super(props);
+    }
 	componentDidUpdate(prevProps) {
 		if (this.props.location !== prevProps.location) {
 			window.scrollTo(0, 0);
 		}
     }
     render() {
+        console.log(this.props);
           return (
         <div className={homepageStyles.homepage}>
             <Slider />
-            <Directory />
+            <Directory props = { this.props }/>
 
         </div>
     );

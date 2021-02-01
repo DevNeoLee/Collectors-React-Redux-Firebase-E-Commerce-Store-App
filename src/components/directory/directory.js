@@ -4,8 +4,8 @@ import MenuItem from '../menu-item/menu-item';
 import directoryStyle from './directory.module.scss'
 
 class Directory extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
 
         this.state = {
             sections: [
@@ -46,6 +46,7 @@ class Directory extends Component {
     }
 
     render() {
+        console.log(this.props)
         return (
             <div className={directoryStyle.directory}>
                  {this.state.sections.map(({ id, ...otherSectionProps }) => (
