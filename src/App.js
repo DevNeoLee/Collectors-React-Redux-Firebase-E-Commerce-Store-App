@@ -7,8 +7,11 @@ import Homepage from './pages/homepage/homepage'
 import Shoppage from './pages/shoppage/shoppage'
 import Loginpage from './pages/loginpage/loginpage'
 import CheckoutPage from './pages/checkoutpage/checkoutpage'
+import Categorypage  from './pages/categorypage/categorypage'
 
+ 
 import Header from './components/header/header'
+import Footer from './components/footer/footer'
 
 import appStyle from './App.scss'
 import { auth, createUserProfileDocument } from './firebase/utils'
@@ -48,12 +51,16 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/shop" component={Shoppage} />
-          <Route exact path="/login" render={()=> this.props.currentUser ? (<Redirect to="/"  />) : (<Loginpage />)} />
-          <Route exact path="/checkout" component={CheckoutPage}></Route>
-        </Switch>
+        <div className="wholePage">
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/shop" component={Shoppage} />
+            <Route exact path="/shop/:category" component={Categorypage} />
+            <Route exact path="/login" render={()=> this.props.currentUser ? (<Redirect to="/"  />) : (<Loginpage />)} />
+            <Route exact path="/checkout" component={CheckoutPage}></Route>
+          </Switch>
+        </div>   
+        <Footer />
       </>
     )
   }
