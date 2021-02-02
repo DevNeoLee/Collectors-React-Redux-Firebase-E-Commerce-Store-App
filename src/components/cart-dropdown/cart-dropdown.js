@@ -28,7 +28,7 @@ const CartDropdown = ({ cartProducts, history, dispatch }) => (
           history.push('/checkout');
           dispatch(toggleCartHidden())
         }
-        }>Go Pay</FormButton>
+        }>Checkout</FormButton>
       </div>
   </div>
 );
