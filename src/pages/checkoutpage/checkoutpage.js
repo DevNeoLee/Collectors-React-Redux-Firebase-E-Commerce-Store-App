@@ -13,7 +13,7 @@ const CheckoutPage = ({cartProducts, total})=> {
     
      return (
          <div className={checkoutPageStyle.main}>
-            <h1>Shopping Collection Cart </h1>
+            <h1>Shopping Cart </h1>
             <hr/>
                 {
             cartProducts.map(product =>        

@@ -8,9 +8,7 @@ import SportMusic from '../../slider-pics/sports-music.png';
 import RareMovie from '../../slider-pics/rare-movie.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import  { fas }  from '@fortawesome/free-solid-svg-icons';
-import  { faChevronCircleLeft }  from '@fortawesome/free-solid-svg-icons';
-import  { faChevronCircleRight }  from '@fortawesome/free-solid-svg-icons';
+import  { fas, faChevronCircleLeft, faChevronCircleRight }  from '@fortawesome/free-solid-svg-icons';
 
 const Slider = () => {
     let sliderArr = [<SliderImage src={Movie} text={"Timeless Movies in DVD/Blu-ray"}/>,<SliderImage src={Animation} text={"Animations in Higest Quality"}/>,<SliderImage src={TVSeries} text={"Own Acclaimed TV-Series"}/>,<SliderImage src={SportMusic} text={"Feel the Excitement in Your Room"}/>,<SliderImage src={RareMovie} text={"Collect Rare Filims on DVD"}/>];
