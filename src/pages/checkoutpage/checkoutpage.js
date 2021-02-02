@@ -34,7 +34,7 @@ const CheckoutPage = ({cartProducts, total, cartCount})=> {
                 </div>
             </div>
             <div className={checkoutPageStyle.testCreditcard}>
-                <p className={checkoutPageStyle.testWarning}>**Please Feel Free to Use the Following Number for Your Test Payment**</p>
+                <p className={checkoutPageStyle.testWarning}>* Please Feel Free to Use the Following Number for Your Test Payment *</p>
                 <br/>
                 <span className={checkoutPageStyle.testNumber}>4242 4242 4242 4242 - Exp: 01/25 - CVV: 123</span>
             </div>

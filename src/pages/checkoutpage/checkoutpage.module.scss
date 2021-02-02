@@ -6,7 +6,7 @@
 
 .main h1 {
     margin-left: 0rem;
-    color:lightslategrey;
+    color:rgba(80, 80, 80, 1);
     padding: 1rem;
 }
 
@@ -65,15 +65,16 @@
 .testCreditcard {
     // float: right;
     // background-color: lime;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     padding: 0.5rem;
+    margin-right: 2rem;
     padding-bottom: 5rem;
     color: rgb(197, 2, 2);
 
     span {
         // float: right;
         color: black;
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
