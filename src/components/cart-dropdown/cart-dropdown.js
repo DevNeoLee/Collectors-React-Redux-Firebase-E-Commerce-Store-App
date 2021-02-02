@@ -15,18 +15,21 @@ const CartDropdown = ({ cartProducts, history, dispatch }) => (
         <h3>Shopping Cart</h3>
         <div className={cartDropdownStyle.close} onClick={()=>dispatch(toggleCartHidden())}>X</div>
       </div>
-      <hr/>   
-        { cartProducts.length ? (
+      <hr/> 
+      <div className={cartDropdownStyle.body}>
+         { cartProducts.length ? (
             cartProducts.map(product => 
-            <CartItemHeader key={product.id} product={ product }/>) )
+            <CartItemHeader key={product.id} product={ product } />) )
             : (<div className={cartDropdownStyle.empty}>Cart is empty</div>)
         }
+      </div>  
       <div className={cartDropdownStyle.button}>
         <FormButton onClick={() => {
           history.push('/checkout');
           dispatch(toggleCartHidden())
         }
-        }>Go Pay</FormButton></div>
+        }>Go Pay</FormButton>
+      </div>
   </div>
 );
 

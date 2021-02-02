@@ -17,11 +17,16 @@
 
 .button {
     margin-top: auto;
-    margin-bottom: 5px;
+    margin-bottom: 0.2rem;
+  
+}
+.body {
+    min-height: 10rem;
+    // background-color: lime;
 }
 
 .empty {
-    min-height: 150px;
+    min-height: 10rem;
     display: flex;
     // text-align: center;
     justify-content: center;
@@ -31,7 +36,9 @@
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
+    height: 3.5rem
 }
 
 .close {
