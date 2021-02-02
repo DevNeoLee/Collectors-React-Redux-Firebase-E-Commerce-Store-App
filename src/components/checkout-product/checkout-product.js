@@ -42,7 +42,6 @@ const CheckoutProduct = ({ product, addProduct, deleteProduct, reduceQuantity })
                     </div>
                     <hr/>
                 </div>
-      
     )}
 }
 

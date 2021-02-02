@@ -1,6 +1,7 @@
 .main {
     background-color: rgba(211,211,211, 0.3);
     padding: 3rem;
+    min-height: 50vh;
 }
 
 .main h1 {
@@ -8,6 +9,73 @@
     color:lightslategrey;
     padding: 1rem;
 }
+
+.header {
+    min-height: 50vh;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: lime;
+    min-height: 25vh;
+    font-size: 1.2rem;
+}
+
 .image {
     width: 20rem;
+}
+
+.summaryContainer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: lightgray;
+    padding: 2rem;
+}
+
+.summary {
+    float: right;
+}
+
+.total {
+    // float: right;
+    font-size: 1.3rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.totalNumber {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.stripeButton {
+    float: right;
+    padding-top: 1rem;
+}
+
+.testCreditcard {
+    // float: right;
+    // background-color: lime;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    padding-bottom: 5rem;
+    color: rgb(197, 2, 2);
+
+    span {
+        // float: right;
+        color: black;
+        font-size: 2rem;
+    }
+}
+
+.testWarning {
+    float: right;
+}
+
+.testNumber {
+    float: right;
+    padding-bottom: 5rem;
 }
