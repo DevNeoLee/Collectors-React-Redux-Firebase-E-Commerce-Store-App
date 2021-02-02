@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
-import icon from '../../icon.png'
+import backgroundImage from '../../icon.png'
 
 import { toggleCartHidden } from '../../redux/cart/cart-actions'
 import { selectCartProductsCount } from '../../redux/cart/cart-selectors'
@@ -14,9 +14,11 @@ const CartHeader = ({ toggleHidden, productCount }) => {
     return (
             <div className={ cartHeaderStyle.container} onClick={toggleHidden}>
                 <div className={ cartHeaderStyle.icon }><GiShoppingCart size={30}/></div>
-                <div className={ cartHeaderStyle.count}><div className={ cartHeaderStyle.number}>{productCount}</div><img className={ cartHeaderStyle.image }src={icon}/></div>
-                
-                <p>Shopping Cart</p>
+                <div className={ cartHeaderStyle.countContainer}>
+                    <img className={ cartHeaderStyle.image } src={backgroundImage}/>
+                    <div className={ cartHeaderStyle.number}>{productCount}</div>
+                </div>
+                <p className={ cartHeaderStyle.cart}>Cart</p>
             </div>
     )
 }

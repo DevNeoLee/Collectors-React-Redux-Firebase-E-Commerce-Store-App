@@ -1,5 +1,12 @@
 @import '../../App';
 
+.header {
+    // position: sticky;
+    top: 0;
+    z-index: 11;
+    background: white;
+}
+
 .main {
     display: flex;
     justify-content: space-around;
@@ -49,8 +56,9 @@ a {
 }
 
 .sticky {
-    position: sticky;
-    top: 0;
-    height: 0;
+    position: fixed;
+    top: 11%;
+    transition: 0.5s;
+    // height: 0;
     // right: 0;
 }
