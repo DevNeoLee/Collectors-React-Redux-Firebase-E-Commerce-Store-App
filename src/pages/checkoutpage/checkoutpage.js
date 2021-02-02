@@ -12,9 +12,9 @@ const CheckoutPage = ({cartProducts, total})=> {
      console.log("hi", cartProducts);
     
      return (
-         <>
-            <CheckoutProduct />
-            <h1>CheckOut Page</h1>
+         <div className={checkoutPageStyle.main}>
+            <h1>Shopping Collection Cart </h1>
+            <hr/>
                 {
             cartProducts.map(product =>        
                 < CheckoutProduct key={product.id} product={product} />
@@ -26,7 +26,7 @@ const CheckoutPage = ({cartProducts, total})=> {
                 4242 4242 4242 4242 - Exp: 01/25 - CVV: 123
             </div>
             <StripeCheckoutButton price={total} />
-        </>
+        </div>
      );   
 };
 

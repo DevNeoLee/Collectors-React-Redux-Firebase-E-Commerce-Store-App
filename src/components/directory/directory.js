@@ -46,7 +46,6 @@ class Directory extends Component {
     }
 
     render() {
-        console.log(this.props)
         return (
             <div className={directoryStyle.directory}>
                  {this.state.sections.map(({ id, ...otherSectionProps }) => (

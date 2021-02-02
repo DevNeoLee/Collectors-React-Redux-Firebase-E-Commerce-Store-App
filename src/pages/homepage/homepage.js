@@ -16,7 +16,6 @@ class Homepage extends Component {
 		}
     }
     render() {
-        console.log(this.props);
           return (
         <div className={homepageStyles.homepage}>
             <Slider />

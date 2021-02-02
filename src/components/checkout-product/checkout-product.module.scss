@@ -1,3 +1,42 @@
+.container {
+    width: 100vw;
+    background-color: magenta;
+    padding: 1rem;
+}
+
+.checkoutProduct {
+    background-color: lightseagreen;
+    display: flex;
+    padding:  2rem 4rem;
+}
+
 .image {
-    width: 100px;
+    width: 10rem;
+}
+
+.detail {
+
+}
+
+.titlePrice {
+    display: flex;
+    background-color: lime;
+    justify-content: space-around;
+}
+
+
+.price {
+    font-size: 1.5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.priceText {
+    font-size: 1rem;
+    position: absolute;
+    top: -30%;
+}
+
+.quantity{
+    display: flex;
 }
