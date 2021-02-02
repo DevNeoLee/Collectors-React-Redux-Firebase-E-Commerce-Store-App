@@ -4,8 +4,8 @@ import sliderStyle from './slider-image.module.scss'
 export default function SliderImage({ src, text }) {
     return (
         <div>
-           <img src={src} alt="slide-img" className={sliderStyle.image}></img>
            <span className={sliderStyle.text}>{text}</span>
+           <img src={src} alt="slide-img" className={sliderStyle.image}></img>
         </div>
     )
 }

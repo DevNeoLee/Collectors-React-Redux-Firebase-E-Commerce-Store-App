@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  { fas, faChevronCircleLeft, faChevronCircleRight }  from '@fortawesome/free-solid-svg-icons';
 
 const Slider = () => {
-    let sliderArr = [<SliderImage src={Movie} text={"Timeless Movies in DVD/Blu-ray"}/>,<SliderImage src={Animation} text={"Animations in Higest Quality"}/>,<SliderImage src={TVSeries} text={"Own Acclaimed TV-Series"}/>,<SliderImage src={SportMusic} text={"Feel the Excitement in Your Room"}/>,<SliderImage src={RareMovie} text={"Collect Rare Filims on DVD"}/>];
+    let sliderArr = [<SliderImage src={Movie} text={"Timeless Movies in DVD/Blu-ray"}/>,<SliderImage src={Animation} text={"Animations in Higest Quality"}/>,<SliderImage src={TVSeries} text={"Own Acclaimed TV-Series"}/>,<SliderImage src={SportMusic} text={"Feel the Excitement"}/>,<SliderImage src={RareMovie} text={"Collect Rare Filims on DVD"}/>];
     const [x, setX] = useState(0);
 
     const goLeft = () => {
