@@ -17,26 +17,26 @@ const Header = ({ currentUser, hidden }) => (
   <div className={headerStyle.header} >
     <div className={headerStyle.main}>
       <div className={headerStyle.logo}><Link to="/"><img src={ logo } alt="logo" width={250}/></Link></div>
-        <div className={headerStyle.links}>
-          <div className={headerStyle.link}><Link to="/shop">Movies</Link></div>
-          <div className={headerStyle.link}><Link to="/">About</Link></div>
-          { currentUser ? 
-            <div onClick={() => auth.signOut() } className={headerStyle.link}>Log out</div>
-            : 
-            <div className={headerStyle.link}><Link to="/login">Log in</Link></div>
-          }  
-        </div>  
-        <div>
-          <div className={headerStyle.cartHeader}>
-            <CartHeader />
-          </div>
-          {
-            hidden ? null :
-            <div className={headerStyle.sticky}>
-              <CartDropdown />
-            </div>
-          }
+      <div className={headerStyle.links}>
+        <div className={headerStyle.link}><Link to="/shop">Movies</Link></div>
+        <div className={headerStyle.link}><Link to="/">About</Link></div>
+        { currentUser ? 
+          <div onClick={() => auth.signOut() } className={headerStyle.link}>Log out</div>
+          : 
+          <div className={headerStyle.link}><Link to="/login">Log in</Link></div>
+        }  
+      </div>  
+      <div>
+        <div className={headerStyle.cartHeader}>
+          <CartHeader />
         </div>
+        {
+          hidden ? null :
+          <div className={headerStyle.sticky}>
+            <CartDropdown />
+          </div>
+        }
+      </div>
     </div>  
   </div>
 );

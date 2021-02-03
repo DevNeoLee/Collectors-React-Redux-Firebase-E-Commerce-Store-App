@@ -52,8 +52,12 @@
     padding: 0 14px 0 14px;
     border-radius: 5%;
     background-color: rgba(252, 206, 0, 0.932);
-    margin-left: 100px;
+    // margin-left: 100px;
     width: auto;
+    // justify-content: center;
+    // align-items: center;
+    margin: 0rem auto;
+    margin-bottom: 1rem;
 
     &:hover {
       background-color:rgb(252, 185, 0)

@@ -2,7 +2,8 @@
 
 .container {
     display: flex;
-    box-shadow: 0 1px 2px 0 rgba(133,133,133,0.3), 0 1px 3px 0 rgba(133,133,133,0.3); 
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+    // box-shadow: 0 1px 2px 0 rgba(133,133,133,0.3), 0 1px 3px 0 rgba(133,133,133,0.3); 
     padding: 5px;
     margin: 1.6rem 0px 0px 0px;
     width: 12rem;
@@ -15,7 +16,8 @@
 
     &:hover {
     transition: 0.2s;
-    box-shadow: 0 1px 3px 0 rgba(133, 133, 133, 0.5), 0 1px 4px 0 rgba(133, 133, 133, 0.5); 
+    box-shadow: 5px 5px 10px hsl(0, 0%, 62%);
+    // box-shadow: 0 1px 3px 0 rgba(133, 133, 133, 0.5), 0 1px 4px 0 rgba(133, 133, 133, 0.5); 
 
         .icon, .image, .cart {
             transform: scale(1.1);

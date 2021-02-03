@@ -4,10 +4,14 @@ import CategoryItem from '../categoryItem/categoryItem'
 
 import categoryStyle from './category.module.scss'
 
-const Category = ({ items, title }) => {
+const Category = ({ items, title, subtitle }) => {
     return (
-        <div className={categoryStyle}>
-            <h1 className={categoryStyle.title}> {title.toUpperCase()}</h1>
+        <div className={categoryStyle.categoryContainer}>
+            <div className={categoryStyle.titleContainer}>
+                <h1 className={categoryStyle.title}> {title}</h1>
+                <h3 className={categoryStyle.subtitle}> {subtitle}</h3>                
+            </div>
+            <div className={categoryStyle.productContainer}>
                 <div className={categoryStyle.category}>
                     {items
                     .filter((item, idx) => idx < 4)
@@ -15,6 +19,7 @@ const Category = ({ items, title }) => {
                     <CategoryItem key={item.id} item={item} />
                     ))}
                 </div>
+            </div>
         </div>
     )
 }
