@@ -36,6 +36,10 @@
 .link {
     cursor: pointer;
     text-decoration: none;
+    &:hover {
+         color: rgba(117, 117, 117, 0.596);
+        transition: 0.35s;
+    }
 }
 
 a {
