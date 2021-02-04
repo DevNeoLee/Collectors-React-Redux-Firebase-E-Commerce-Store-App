@@ -20,7 +20,6 @@ class Homepage extends Component {
         <div className={homepageStyles.homepage}>
             <Slider />
             <Directory props = { this.props }/>
-
         </div>
     );
     } 

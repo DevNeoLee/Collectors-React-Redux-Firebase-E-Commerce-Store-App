@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-import Product from '../../components/product/product'
+import Product from '../../components/product/product';
 
-import productpageStyle from './productpage.module.scss'
+import productpageStyle from './productpage.module.scss';
 
-const Productpage = () => (
+const Productpage = ({ item }) => (
   <div className={productpageStyle.productpage} >
+    this is from Productpage!
     <div className={productpageStyle.vl}></div>
-    <Product />
+    <Product item= { item }/>
   </div>
 );
 

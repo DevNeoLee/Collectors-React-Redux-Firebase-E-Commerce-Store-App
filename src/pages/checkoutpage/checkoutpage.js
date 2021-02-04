@@ -9,8 +9,6 @@ import CheckoutProduct from '../../components/checkout-product/checkout-product'
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button';
 
 const CheckoutPage = ({cartProducts, total, cartCount})=> {
-     console.log("hi", cartProducts);
-    
      return (
         <div className={checkoutPageStyle.main}>
             <div className={checkoutPageStyle.header}>

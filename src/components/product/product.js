@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 import productStyle from './product.module.scss';
 import logo from '../../logoMain.png'
 
-const Product = () => {
+const Product = ({ item }) => {
 
     return (
         <div className={productStyle.container}>
-          <div>
-            <a href=""></a>       
+          <div>      
             <Link to="/"><img src={ logo } alt="logo" width={400}/></Link>
-            <small>&copy; 2020</small>
           </div>
         </div>
     );

@@ -11,18 +11,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  { fas, faChevronCircleLeft, faChevronCircleRight }  from '@fortawesome/free-solid-svg-icons';
 
 const Slider = () => {
-    let sliderArr = [<SliderImage src={Movie} text={"Timeless Movies in DVD/Blu-ray"}/>,<SliderImage src={Animation} text={"Animations in Highest Quality"}/>,<SliderImage src={TVSeries} text={"Own Acclaimed TV-Series"}/>,<SliderImage src={SportMusic} text={"Feel the Excitement"}/>,<SliderImage src={RareMovie} text={"Collect Rare Filims on DVD"}/>];
+    const SLIDER = [
+        <SliderImage src={Movie} index={ 1 } text={"Timeless Movies in DVD/Blu-ray"}/>,
+        <SliderImage src={Animation} index={ 2 }  text={"Animations in Highest Quality"}/>,
+        <SliderImage src={TVSeries} index={ 3 }  text={"Own Acclaimed TV-Series"}/>,
+        <SliderImage src={SportMusic} index={ 4 } text={"Feel the Excitement"}/>,
+        <SliderImage src={RareMovie} index={ 5 } text={"Collect Rare Filims on DVD"}/>
+    ];
+
     const [x, setX] = useState(0);
 
     const goLeft = () => {
         x === 0 ? 
-            setX((sliderArr.length - 1) * -100)
+            setX((SLIDER.length - 1) * -100)
             :
             setX(x + 100)
         };
 
     const goRight= () => {
-        x === (sliderArr.length - 1) * -100 ?
+        x === (SLIDER.length - 1) * -100 ?
             setX(0)
             :
             setX(x - 100)
@@ -35,7 +42,7 @@ const Slider = () => {
 
     return(
         <div className={sliderStyle.slider}>
-            { sliderArr.map((item, idx) => {
+            { SLIDER.map((item, idx) => {
                 return(
                     <div key={idx} className={sliderStyle.slide} style={{ transform: `translateX(${x}%)`}}>
                         {item}

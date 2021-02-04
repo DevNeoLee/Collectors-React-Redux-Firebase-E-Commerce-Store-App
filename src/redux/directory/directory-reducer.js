@@ -16,21 +16,21 @@ const INITIAL_STATE = {
                 title: 'tv-series',
                 imageUrl: '',
                 id: 3,
-                linkUrl: 'shop/tv-series'
+                linkUrl: 'shop/tvseries'
             },
             {
                 title: 'sports-art',
                 imageUrl: '',
                 size: 'large',
                 id: 4,
-                linkUrl: 'shop/sports-art'
+                linkUrl: 'shop/sportsart'
             },
             {
                 title: 'rare-collectors',
                 imageUrl: '',
                 size: 'large',
                 id: 5,
-                linkUrl: 'shop/rare-collectors'
+                linkUrl: 'shop/rarecollection'
             }       
         ]
 };

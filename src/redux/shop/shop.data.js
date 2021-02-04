@@ -134,7 +134,7 @@ const SHOP_DATA =
         id: 3,
         title: 'Tv-series',
         subtitle: 'Own Acclaimed TV-Series',
-        routeName: 'tv-series',
+        routeName: 'tvseries',
         items: [
                 {
                     id: 20,
@@ -202,7 +202,7 @@ const SHOP_DATA =
         id: 4,
         title: 'Rare-Collections',
         subtitle: 'Collect Rare Filims on DVD',
-        routeName: 'rare-collection',
+        routeName: 'rarecollection',
         items: [
                 {
                     id: 29,
@@ -264,7 +264,7 @@ const SHOP_DATA =
         id: 5,
         title: 'Sports/Arts',
         subtitle: 'Feel the Excitement',
-        routeName: 'sports-arts',
+        routeName: 'sportsart',
         items: [
                 {
                     id: 37,

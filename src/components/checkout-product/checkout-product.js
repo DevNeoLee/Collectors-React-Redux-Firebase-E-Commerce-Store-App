@@ -7,7 +7,7 @@ import checkoutProductStyle from './checkout-product.module.scss';
 import { deleteProduct, addProduct, reduceQuantity } from '../../redux/cart/cart-actions';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import  { fas, faCaretRight, faCaretLeft, faAngleDoubleLeft, faAngleDoubleRight  }  from '@fortawesome/free-solid-svg-icons';
+import  { fas, faAngleDoubleLeft, faAngleDoubleRight  }  from '@fortawesome/free-solid-svg-icons';
 
 const CheckoutProduct = ({ product, addProduct, deleteProduct, reduceQuantity }) => {
     if (product) {
@@ -29,7 +29,7 @@ const CheckoutProduct = ({ product, addProduct, deleteProduct, reduceQuantity })
                                         {product.quantity}
                                     </div>
                                     <div onClick={() => addProduct(product)}>
-                                        <FontAwesomeIcon icon={ fas, faAngleDoubleRight } className={checkoutProductStyle.icon} size="1.5x" />
+                                        <FontAwesomeIcon icon={ fas, faAngleDoubleRight } className={checkoutProductStyle.icon} size="1x" />
                                     </div>
                                 </div>
                                 <div className={checkoutProductStyle.delete}>Delete: 
