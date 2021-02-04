@@ -18,8 +18,12 @@ const Header = ({ currentUser, hidden }) => (
     <div className={headerStyle.main}>
       <div className={headerStyle.logo}><Link to="/"><img src={ logo } alt="logo" width={250}/></Link></div>
       <div className={headerStyle.links}>
-        <div className={headerStyle.link}><Link to="/shop">Movies</Link></div>
-        <div className={headerStyle.link}><Link to="/">About</Link></div>
+        {/* <div className={headerStyle.link}><Link to="/shop">Shop</Link></div> */}
+        <div className={headerStyle.link}><Link to="/shop/movie">Movie</Link></div>
+        <div className={headerStyle.link}><Link to="/shop/animation">Animation</Link></div>
+        <div className={headerStyle.link}><Link to="/shop/tvseries">TV-Series</Link></div>
+        <div className={headerStyle.link}><Link to="/shop/sportsart">Sports/Art</Link></div>
+        <div className={headerStyle.link}><Link to="/shop/rarecollection">Rare Collection</Link></div>
         { currentUser ? 
           <div onClick={() => auth.signOut() } className={headerStyle.link}>Log out</div>
           : 

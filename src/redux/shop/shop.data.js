@@ -138,9 +138,9 @@ const SHOP_DATA =
         items: [
                 {
                     id: 20,
-                    name: 'The 10th Kingdom [Blu-ray]',
-                    imageUrl: '/media-images/tv-series/10thkingdom.jpg',
-                    price: 125
+                    name: 'The X-Files Complete Series - Seasons 1-11 [Blu-ray]',
+                    imageUrl: '/media-images/tv-series/x-file2.jpg',
+                    price: 190
                 },
                 {
                     id: 21,
@@ -185,17 +185,12 @@ const SHOP_DATA =
                     price: 190
                 },
                 {
-                    id: 21,
+                    id: 28,
                     name: 'The Complete Thin Man Collection (Alias Nick and Nora)',
                     imageUrl: '/media-images/tv-series/thinman.jpg',
                     price: 175
-                },
-                {
-                    id: 28,
-                    name: 'The X-Files Complete Series - Seasons 1-11 [Blu-ray]',
-                    imageUrl: '/media-images/tv-series/x-file2.jpg',
-                    price: 190
                 }
+     
             ]
         },
          {

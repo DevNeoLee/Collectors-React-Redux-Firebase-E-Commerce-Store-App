@@ -4,13 +4,13 @@
     // position: sticky;
     top: 0;
     z-index: 11;
-    background: white;
+    // background: bisque;
     box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
 }
 
 .main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     // background-color: aqua;
     height: 120px;
     z-index: 10;
@@ -19,7 +19,7 @@
 
 .logo {
     // background-color: azure;
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 1rem;
 }
 
 .links {
@@ -28,9 +28,11 @@
     justify-content: space-between;
     padding: 37px 0px 0px 0px;
     // justify-content: flex-end;
-    width: 300px;
+    width: 800px;
     // box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
-
+    // background-color: maroon;
+    position: relative;
+    right: 10%;
 }
 
 .link {
