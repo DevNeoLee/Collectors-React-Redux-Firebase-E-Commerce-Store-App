@@ -1,17 +1,23 @@
 .container {
-    width: 100%;
+    // width: 100%;
     background-color: white;
     // padding: 0.5rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 0 auto;
+    // padding: 0.2rem;
 }
 
 .checkoutProduct {
-    // background-color: lightseagreen;
     display: flex;
-    padding:  2rem 4rem;
+    padding: 1.2rem 4rem 1rem 1.8rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .imageContainer {
-    min-width: 300px;
+    min-width: 16rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -33,6 +39,7 @@
     display: flex;
     // background-color: lime;
     justify-content: space-between;
+    padding-bottom: 1rem;
 }
 
 
@@ -54,6 +61,7 @@
     height: 100px;
     // background-color: maaroon;
     border: 1px solid lightgray;
+    border-radius: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +94,7 @@
 }
 
 .delete {
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
 }
 

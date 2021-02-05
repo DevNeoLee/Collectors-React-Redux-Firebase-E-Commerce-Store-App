@@ -12,9 +12,9 @@ import { GiShoppingCart } from 'react-icons/gi';
 
 const CartHeader = ({ toggleHidden, productCount, hidden }) => {
       
-    useEffect(() => toggleDropdown(), [hidden]);
+    useEffect(() => toggleEventListener(), [hidden]);
 
-    const toggleDropdown = () => {
+    const toggleEventListener = () => {
         if (hidden) {
             document.removeEventListener('click', toggleHidden );
         } else {

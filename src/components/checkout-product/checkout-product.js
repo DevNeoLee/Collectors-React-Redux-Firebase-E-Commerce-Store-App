@@ -17,7 +17,7 @@ const CheckoutProduct = ({ product, addProduct, deleteProduct, reduceQuantity })
                         <div className={checkoutProductStyle.detail}>
                             <div className={checkoutProductStyle.titlePrice}>
                                 <h2>{product.name}</h2>
-                                <div className={checkoutProductStyle.price}><div className={checkoutProductStyle.priceText}>Price </div>$ {product.price}</div>
+                                <div className={checkoutProductStyle.price}>$ {product.price}</div>
                             </div>
                             <div className={checkoutProductStyle.description}><p>+Description+this is the details......currently empty</p></div>
                             <div className={checkoutProductStyle.quantityDelete}>

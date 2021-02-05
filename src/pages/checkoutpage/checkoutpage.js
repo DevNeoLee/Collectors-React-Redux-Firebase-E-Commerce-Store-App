@@ -25,13 +25,15 @@ const CheckoutPage = ({ cartProducts, total, cartCount, history })=> {
             <div className={checkoutPageStyle.header}>
                 <h1>Shopping Cart </h1>
                 <hr/>
-                {
-                    cartProducts.map(product =>        
-                        < CheckoutProduct key={product.id} product={product} />)
-                }
-                { (cartProducts.length) === 0 ? 
-                    (<div className={checkoutPageStyle.empty}><p>Cart is Empty</p></div>): ""
-                }
+                <div className={checkoutPageStyle.products}>
+                    {
+                        cartProducts.map(product =>        
+                            < CheckoutProduct key={product.id} product={product} />)
+                    }
+                    { (cartProducts.length) === 0 ? 
+                        (<div className={checkoutPageStyle.empty}><p>Cart is Empty</p></div>): ""
+                    }
+                </div>
             </div>
             <div className={checkoutPageStyle.summaryContainer}>
                 <div className={checkoutPageStyle.summary}>
@@ -43,9 +45,10 @@ const CheckoutPage = ({ cartProducts, total, cartCount, history })=> {
                 </div>
             </div>
             <div className={checkoutPageStyle.testCreditcard}>
-                <p className={checkoutPageStyle.testWarning}>* Please Feel Free to Use the Following Number for Your Test Payment *</p>
-                <br/>
-                <span className={checkoutPageStyle.testNumber}>4242 4242 4242 4242 - Exp: 01/25 - CVV: 123</span>
+                <div className={checkoutPageStyle.ccContainer}>
+                    <p className={checkoutPageStyle.testWarning}>* Please Feel Free to Use the Following Number for Your Test Payment *</p>
+                    <p className={checkoutPageStyle.testNumber}>4242 4242 4242 4242 - Exp: 01/25 - CVV: 123</p>                
+                </div>
             </div>
         </div>
      );   
