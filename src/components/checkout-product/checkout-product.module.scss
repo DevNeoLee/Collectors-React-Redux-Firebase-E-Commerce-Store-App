@@ -39,7 +39,8 @@
     display: flex;
     // background-color: lime;
     justify-content: space-between;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
+    margin-bottom: 2.5rem;
 }
 
 
@@ -58,7 +59,7 @@
 
 .description {
     width: 100%;
-    height: 100px;
+    height: 4rem;
     // background-color: maaroon;
     border: 1px solid lightgray;
     border-radius: 0.2rem;
@@ -69,7 +70,7 @@
 
 .quantityDelete{
     display: flex;
-    padding: 2rem;
+    padding: 1rem 2rem;
     align-items: center;
     justify-content: space-between;
 }
