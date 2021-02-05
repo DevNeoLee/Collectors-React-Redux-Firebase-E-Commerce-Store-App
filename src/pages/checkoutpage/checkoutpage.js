@@ -1,4 +1,6 @@
-import React from 'react' 
+import React, { useEffect } from 'react';
+import { withRouter } from "react-router-dom";
+
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
@@ -8,7 +10,16 @@ import { selectCartProducts, selectCartTotal, selectCartProductsCount } from '..
 import CheckoutProduct from '../../components/checkout-product/checkout-product'
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button';
 
-const CheckoutPage = ({cartProducts, total, cartCount})=> {
+const CheckoutPage = ({ cartProducts, total, cartCount, history })=> {
+    useEffect(() => {
+        const unlisten = history.listen(() => {
+            window.scrollTo(0, 0);
+        });
+        return () => {
+            unlisten();
+        }
+    }, []);
+
      return (
         <div className={checkoutPageStyle.main}>
             <div className={checkoutPageStyle.header}>
@@ -47,5 +58,5 @@ const mapStateToProps = createStructuredSelector({
 
 });
 
-export default connect(mapStateToProps)(CheckoutPage)
+export default connect(mapStateToProps)(withRouter(CheckoutPage));
 
