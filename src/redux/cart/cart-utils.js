@@ -19,7 +19,8 @@ export const reduceQuantity = (cartProducts, payload) => {
             product.id === payload.id);
 
     if (targetProduct.quantity === 1) {
-        return cartProducts.filter(product => product.id !== payload.id)
+        return cartProducts;
+        // return cartProducts.filter(product => product.id !== payload.id);
     } else {
         return cartProducts.map(product => 
                     product.id === payload.id ? {...product, quantity: product.quantity - 1} : product
