@@ -12,7 +12,6 @@ import Productpage from './pages/productpage/productpage';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 
-import appStyle from './App.scss';
 import { auth, createUserProfileDocument } from './firebase/utils';
 import { setCurrentUser } from './redux/user/user-actions';
 import { selectCurrentUser } from './redux/user/user-selectors';

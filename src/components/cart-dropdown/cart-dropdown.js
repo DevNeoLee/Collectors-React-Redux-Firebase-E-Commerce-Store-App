@@ -13,7 +13,7 @@ const CartDropdown = ({ cartProducts, history, dispatch }) => (
   <div className={cartDropdownStyle.main} >
       <div className={cartDropdownStyle.header}>
         <h3>Shopping Cart</h3>
-        <div className={cartDropdownStyle.close} onClick={()=>dispatch(toggleCartHidden())}>X</div>
+        {/* <div className={cartDropdownStyle.close} onClick={()=>dispatch(toggleCartHidden())}>X</div> */}
       </div>
       <hr/> 
       <div className={cartDropdownStyle.body}>

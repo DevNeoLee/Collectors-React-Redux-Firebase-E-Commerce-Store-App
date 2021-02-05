@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import backgroundImage from '../../icon.png';
 
 import { toggleCartHidden } from '../../redux/cart/cart-actions';
-import { selectCartProductsCount } from '../../redux/cart/cart-selectors';
+import { selectCartHidden, selectCartProductsCount } from '../../redux/cart/cart-selectors';
 
 import cartHeaderStyle from './cart-header.module.scss';
 import { GiShoppingCart } from 'react-icons/gi';
 
-const CartHeader = ({ toggleHidden, productCount }) => {
+const CartHeader = ({ toggleHidden, productCount, hidden }) => {
+      
+    useEffect(() => toggleDropdown(), [hidden]);
+
+    const toggleDropdown = () => {
+        if (hidden) {
+            document.removeEventListener('click', toggleHidden );
+        } else {
+            document.addEventListener('click', toggleHidden );
+        }
+    };
 
     return (
             <Link to="/checkout">
@@ -31,7 +41,8 @@ const mapDispatchToProps = dispatch => ({
  });
 
 const mapStateToProps = createStructuredSelector({
-    productCount: selectCartProductsCount
+    productCount: selectCartProductsCount,
+    hidden: selectCartHidden
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartHeader);
