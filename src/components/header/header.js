@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect';
 
 import headerStyle from './header.module.scss'
-import logo from '../../logoMain.png'
+import logo from '../../logoBoxMain.svg'
 
 import { auth } from '../../firebase/utils'
 import CartHeader from '../cart-header/cart-header'

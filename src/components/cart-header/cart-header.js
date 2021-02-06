@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import backgroundImage from '../../icon.png';
+import backgroundImage from '../../favicon7.svg';
 
 import { toggleCartHidden } from '../../redux/cart/cart-actions';
 import { selectCartHidden, selectCartProductsCount } from '../../redux/cart/cart-selectors';

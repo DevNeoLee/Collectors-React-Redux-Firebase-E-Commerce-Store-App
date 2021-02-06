@@ -33,11 +33,12 @@
 
 .image {
     position: relative;
-    max-width: 2.8rem;
-    max-height: 2.8rem;
+    max-width: 2.4rem;
+    max-height: 2.4rem;
     width: auto;
     height: auto;
-    opacity: 0.7;
+    opacity: 1;
+    // margin-bottom: 0.2rem;
 }
 
 .number {
@@ -48,6 +49,7 @@
     z-index: 3;  
     transform: translateY(40%);
     text-align: center;
+    color: white;
 }
 
 .cart {
