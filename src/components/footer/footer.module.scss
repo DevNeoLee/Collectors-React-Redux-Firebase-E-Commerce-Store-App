@@ -1,12 +1,21 @@
 .container {
-    height: 20rem;
+    min-height: 20rem;
     display: flex;
     text-align: center;  
     box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
 }
-
 .logoContainer {
-    // background-color: blueviolet;
+
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.container li {
+     text-decoration: none;
+     padding: 0.5rem;
 }
 
 .logo{
@@ -22,26 +31,54 @@
 }
 
 .logo small {
-    padding: 2.4rem 1rem 1rem 0rem;
+    padding: 1.2rem 2.1rem 1rem 0rem;
     width: 5rem;
 }
 
 .listContainer {
-    // background-color: brown;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-column-gap: 1rem;
     justify-content: space-around;
     width: 100%;
     padding: 2rem;
 }
-.container ul {
-    list-style-type: none;
-    padding: 1rem;
-    font-size: 1.1rem;
+
+.list {
+    margin-bottom: 2rem;
+}
+.about {
+
 }
 
-.container li {
-     text-decoration: none;
-     padding: 0.5rem;
+.about li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+.about li a{
+    display: flex;
+    width: 10rem;
+    justify-content: center;
+    align-items: center; 
+}
 
+.about img {
+    width: 1.5rem;
+    margin: 0.4rem;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.25s;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  
+  }
+}
