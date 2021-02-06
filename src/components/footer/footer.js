@@ -35,9 +35,9 @@ const footer = () => {
             <div>
               <h4>About</h4>
               <ul>
-                <li><div><a href="https://devneolee.github.io/justinklee/" target="_blank"><span class="mr-1">© Justin K Lee </span></a></div></li>
-                <li><a target="_blank" href="https://github.com/devneoLee" ><span class="mr-2">GitHub</span><i class="fab fa-github fa-lg"></i></a></li>      								       
-                <li><a target="_blank" href="https://www.linkedin.com/in/justinklee215/"><span class="mr-2">LinkedIn</span><i class="fab fa-linkedin fa-lg"></i></a></li>
+                <li><div><a href="https://devneolee.github.io/justinklee/" target="_blank"><span>© Justin K Lee </span></a></div></li>
+                <li><a target="_blank" href="https://github.com/devneoLee" ><span>GitHub</span><i></i></a></li>      								       
+                <li><a target="_blank" href="https://www.linkedin.com/in/justinklee215/"><span>LinkedIn</span><i></i></a></li>
               </ul>
             </div>
           </div>
