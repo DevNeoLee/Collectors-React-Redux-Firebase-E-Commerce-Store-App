@@ -27,10 +27,9 @@ const CartHeader = ({ toggleHidden, productCount, hidden }) => {
                 <div className={ cartHeaderStyle.container} onMouseEnter={toggleHidden}>
                     <div className={ cartHeaderStyle.icon }><GiShoppingCart size={30}/></div>
                     <div className={ cartHeaderStyle.countContainer}>
-                        <img className={ cartHeaderStyle.image } src={backgroundImage}/>
                         <div className={ cartHeaderStyle.number}>{productCount}</div>
+                        <img className={ cartHeaderStyle.image } src={backgroundImage}/>
                     </div>
-                    <p className={ cartHeaderStyle.cart}>Cart</p>
                 </div>
             </Link>
     )

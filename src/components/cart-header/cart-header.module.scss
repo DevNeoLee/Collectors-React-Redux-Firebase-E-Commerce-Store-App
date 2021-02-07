@@ -6,13 +6,15 @@
     // box-shadow: 0 1px 2px 0 rgba(133,133,133,0.3), 0 1px 3px 0 rgba(133,133,133,0.3); 
     padding: 5px;
     margin: 1.6rem 0px 0px 0px;
-    width: 12rem;
+    width: 8rem;
     position: fixed;
-    top: 0;
-    right: 1%;
+    top: 17px;
+    right: 5px;
     justify-content: space-around;
     align-items: center;
     background-color: white;
+    border-radius: 0.1rem;
+    z-index: 10;
 
     &:hover {
     transition: 0.2s;
@@ -38,6 +40,7 @@
     width: auto;
     height: auto;
     opacity: 1;
+    // background-color: orange;
     // margin-bottom: 0.2rem;
 }
 
@@ -45,9 +48,9 @@
     position: absolute; 
     padding: 0.1rem;
     border-radius: 100%;
-    right: 45%;
+    right: 20%;
     z-index: 3;  
-    transform: translateY(40%);
+    transform: translateY(25%);
     text-align: center;
     color: white;
 }
