@@ -58,7 +58,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://github.com/devneoLee" >
+                  <a target="_blank" href="https://github.com/DevNeoLee/redux-ecommerce-store" >
                     <span>GitHub</span>
                     <img src={gitLogo} alt=""/>
                   </a>
