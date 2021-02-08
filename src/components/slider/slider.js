@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import sliderStyle from './slider.module.scss';
 import SliderImage from '../slider-image/slider-image';
-import Movie from '../../slider-pics/movie.png';
-import Animation from '../../slider-pics/animation.png';
-import TVSeries from '../../slider-pics/tv-series.png';
-import SportMusic from '../../slider-pics/sports-music.png';
-import RareMovie from '../../slider-pics/rare-movie.png';
+import Movie from '../../slider-pics-small/movie.png';
+import Animation from '../../slider-pics-small/animation.png';
+import TVSeries from '../../slider-pics-small/tv-series.png';
+import SportMusic from '../../slider-pics-small/sports-music.png';
+import RareMovie from '../../slider-pics-small/rare-movie.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  { fas, faChevronCircleLeft, faChevronCircleRight }  from '@fortawesome/free-solid-svg-icons';
