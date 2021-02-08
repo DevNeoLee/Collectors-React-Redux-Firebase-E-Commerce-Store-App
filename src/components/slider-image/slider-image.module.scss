@@ -30,10 +30,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+    box-shadow: 3px 3px 8px white;
 
     &:hover {
-        box-shadow: 6px 6px 11px hsl(0, 0%, 46%);
+        box-shadow: 8px 8px 13px white;
         cursor: pointer;
         transition: 0.35s;
         background-color: rgba(11, 0, 154, 0.9);

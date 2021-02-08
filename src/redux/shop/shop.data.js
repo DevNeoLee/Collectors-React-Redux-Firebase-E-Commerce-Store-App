@@ -270,7 +270,7 @@ const SHOP_DATA =
                 {
                     id: 38,
                     name: 'WWE: Hulk Hogan - The Ultimate Anthology',
-                    imageUrl: '/media-images-thumb-thumb/sports-arts/hulk.jpg',
+                    imageUrl: '/media-images-thumb/sports-arts/hulk.jpg',
                     price: 60
                 },
                 {
