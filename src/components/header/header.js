@@ -60,7 +60,7 @@ const Header = ({ currentUser, hidden }) => {
         </div>
         <div className={ `${headerStyle.menudown} ${isOpen ? headerStyle.toggle : headerStyle.close}` }>
           <div className={headerStyle.list}>
-            <div className={headerStyle.link}><Link to="/shop/movie"><p>Movie</p></Link></div>
+            <Link to={`/shop/movie`}><div className={headerStyle.link}><h1>Movie</h1></div></Link>
             <div className={headerStyle.link}><Link to="/shop/animation">Animation</Link></div>
             <div className={headerStyle.link}><Link to="/shop/tvseries">TV<br/>Series</Link></div>
             <div className={headerStyle.link}><Link to="/shop/sportsart">Sports<br/>/Art</Link></div>
