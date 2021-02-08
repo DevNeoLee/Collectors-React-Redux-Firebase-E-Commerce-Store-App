@@ -1,12 +1,5 @@
 .container {
-    // width: 100%;
     background-color: white;
-    // padding: 0.5rem;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // margin: 0 auto;
-    // padding: 0.2rem;
 }
 
 .checkoutProduct {
@@ -40,15 +33,20 @@
     // background-color: lime;
     justify-content: space-between;
     padding-bottom: 0rem;
-    margin-bottom: 2.5rem;
 }
 
+.titlePrice h2 {
+    height: 6rem;
+    text-align: center;
+}
 
 .price {
     font-size: 1.5rem;
     // padding: 1rem;
     position: relative;
     text-align: center;
+    display: flex;
+    min-width: 4rem;
 }
 
 .priceText {
@@ -99,9 +97,42 @@
     display: flex;
 }
 
-
 .x {
     cursor: pointer;
     margin: 0rem 1rem;
     color:rgb(3, 68, 245);
+}
+@media only screen and (max-width: 1000px) {
+     .checkoutProduct {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .checkoutProduct {
+        flex-direction: column;
+        margin: 0rem auto;
+        text-align: center;
+    }
+
+    .price {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .titlePrice {
+        display: block;
+    }
+
+    .titlePrice h2{
+        width: 100%;
+        text-align: center;
+    }
+    .checkoutProduct {
+        display: flex;
+        padding: 1.2rem 4rem 1rem 1.8rem;
+        align-items: center;
+        justify-content: center;
+    }
 }

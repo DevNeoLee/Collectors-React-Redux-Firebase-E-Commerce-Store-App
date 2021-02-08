@@ -38,7 +38,7 @@ const CheckoutPage = ({ cartProducts, total, cartCount, history })=> {
             <div className={checkoutPageStyle.summaryContainer}>
                 <div className={checkoutPageStyle.summary}>
                     <div className={checkoutPageStyle.total}>
-                        SubTotal: ( <div className={checkoutPageStyle.cartCount}> {cartCount} </div> item{ cartCount < 2 ? "" : "s"} )
+                        SubTotal <div className={checkoutPageStyle.cartCount}>( {cartCount} item{ cartCount < 2 ? "" : "s"} ) </div>
                         <div className={checkoutPageStyle.totalNumber}>$ {total}</div>
                     </div>
                     <div className={checkoutPageStyle.stripeButton}><StripeCheckoutButton price={total}/></div>

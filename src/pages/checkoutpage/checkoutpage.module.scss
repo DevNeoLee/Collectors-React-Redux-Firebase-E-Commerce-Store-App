@@ -18,7 +18,7 @@
     // display: flex;
     // justify-content: center;
     // align-items: center;
-    // padding: 1rem auto;
+    padding: 0rem auto;
 }
 
 .empty {
@@ -34,12 +34,11 @@
     display: flex;
     justify-content: flex-end;
     background-color: lightgray;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .summary {
     float: right;
-    padding: 0 2rem 1rem 0;
 }
 
 .total {
@@ -53,18 +52,17 @@
 .cartCount {
     font-weight:800;
     padding: 0rem 0.7rem;
-    font-size: 1.4rem;
-    color:rgb(3, 47, 192)
+    font-size: 1.6rem;
 }
 
 .totalNumber {
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 1rem;
 }
 
 .stripeButton {
     float: right;
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
 .testCreditcard {
@@ -87,4 +85,51 @@
     padding: 1rem;
     color: rgba(0, 0, 0, 0.699);
     font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main {
+        padding: 0rem 0rem;
+    }
+    
+    .summaryContainer {
+        display: flex;
+        justify-content: center;
+        // background-color: rgb(214, 61, 61);
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main {
+        padding: 0.1rem 0.1rem;
+    }
+
+    .summaryContainer {
+        display: block;
+        justify-content: center;
+        // background-color: rgb(61, 214, 99);
+        padding: 2rem;
+    }
+
+    .total {
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .summary {
+        float: none;
+        font-size: 1rem;
+    }
+
+    .stripeButton {
+        float: none;
+        display: flex;
+        padding-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

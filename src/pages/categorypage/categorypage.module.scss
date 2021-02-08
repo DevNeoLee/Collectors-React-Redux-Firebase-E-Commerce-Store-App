@@ -9,10 +9,10 @@
     display: grid;
     // justify-content: center;
     grid-column-gap: 1.3rem;
-    padding: 0.5rem auto;
-    margin: 5px auto;
+    padding: 0rem auto;
+    margin: 0px auto;
 	// box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
 }
 
 .titleContainer {
