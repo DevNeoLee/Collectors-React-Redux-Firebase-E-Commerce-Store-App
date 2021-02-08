@@ -1,12 +1,11 @@
 .loginpage {
-    // background-color: lightgrey;
-    // padding: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 3rem;
     min-height: 40rem;
     margin-bottom: 10rem;
+
 }
 
 .vl {
@@ -14,6 +13,19 @@
   height: 400px;
   position: absolute;
   left: 50%;
-//   margin-left: -3px;
-//   top: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .loginpage {
+    display: grid;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto;
+  }
+
+  .vl {
+    display: none;
+  }
+
 }
