@@ -38,27 +38,25 @@ Product category pages, checkout cart, and payment system, Log in /Sign up.
 
 ## Features
 
--  Reusable React Components
+-  Reusable React components for Product Categories and User Log in / Sign up / Sign out
 
--  Redux Global State Management 
+-  Redux global state management for product list and user status
 
--  Firebase Backend
+-  Firebase Backend for User Authentification with Google Omniauth and product category/list
 
--  Google Omniauth
+-  Stripe Payment integration for cart checkout system
 
--  Stripe Payment
+- Memoization with Selectors for cart products or product categories
 
-- Memoization with Selectors
+- State Normalization for large data set for performance enhancement
 
-- State Normalization
+- Code Splitting to avoid winding up too big
 
-- Code Splitting
+- React Lazy and Suspense for dynamic import when it is needed
 
-- React Lazy and Suspense
+- Nested Routing to dynamically build routes with parent routes to their children
 
-- Nested Routing
-
-- HOC Patterns
+- HOC Patterns, a function that takes a component and returns a new component
 
 - React Devtools Profiler
 
