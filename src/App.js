@@ -20,7 +20,7 @@ const Homepage = lazy(()=> import('./pages/homepage/homepage'));
 const Loginpage = lazy(()=> import('./pages/loginpage/loginpage'));
 const Shoppage = lazy(()=> import('./pages/shoppage/shoppage'));
 const CheckoutPage = lazy(()=> import('./pages/checkoutpage/checkoutpage'));
-const Productpage = lazy(()=> import('./pages/productpage/productpage'));
+// const Productpage = lazy(()=> import('./pages/productpage/productpage'));
 
 
 class App extends React.Component {
@@ -64,7 +64,7 @@ class App extends React.Component {
               <Route path="/shop" component={Shoppage} />
               <Route exact path="/login" render={()=> this.props.currentUser ? (<Redirect to="/"  />) : (<Loginpage />)} />
               <Route exact path="/checkout" component={CheckoutPage}></Route>
-              <Route exact path="/:id" component={Productpage}></Route>
+              {/* <Route exact path="/:id" component={Productpage}></Route> */}
             </Suspense>
           </Switch>
         </div>   
