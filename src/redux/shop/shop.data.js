@@ -1,6 +1,6 @@
 const SHOP_DATA =
-    [   
-         {
+    {   
+        movie: {
         id: 1,
         title: 'Movies',
         subtitle: 'Timeless Movies in DVD/Blu-ray',
@@ -68,7 +68,7 @@ const SHOP_DATA =
                 }
             ]
         },
-         {
+        animation: {
         id: 2,
         title: 'Animations',
         subtitle: 'Animations in Highest Quality',
@@ -130,7 +130,7 @@ const SHOP_DATA =
                 }
             ]
         },
-         {
+        tvseries: {
         id: 3,
         title: 'Tv-series',
         subtitle: 'Own Acclaimed TV-Series',
@@ -193,7 +193,7 @@ const SHOP_DATA =
      
             ]
         },
-         {
+        rarecollection: {
         id: 4,
         title: 'Rare-Collections',
         subtitle: 'Collect Rare Filims on DVD',
@@ -255,7 +255,7 @@ const SHOP_DATA =
                 }
             ]
         },
-        {
+        sportsart: {
         id: 5,
         title: 'Sports/Arts',
         subtitle: 'Feel the Excitement',
@@ -281,6 +281,6 @@ const SHOP_DATA =
                 }
             ]
         }    
-    ]
+    }
        
 export default SHOP_DATA

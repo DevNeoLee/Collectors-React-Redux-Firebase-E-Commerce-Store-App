@@ -4,7 +4,7 @@ import { createStructuredSelector } from 'reselect';
 
 import Category from '../category/category';
 
-import { selectCollections } from '../../redux/shop/shop-selectors';
+import { selectCollectionsForCategory } from '../../redux/shop/shop-selectors';
 
 import collectionsStyle from './collections.module.scss';
 
@@ -18,7 +18,7 @@ const Collections = ({ collections }) => (
 );
 
 const mapStateToProps = createStructuredSelector({
-  collections: selectCollections
+  collections: selectCollectionsForCategory
 });
 
 export default connect(mapStateToProps)(Collections);
