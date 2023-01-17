@@ -2,7 +2,7 @@
 
 # Collectors-App
 
--  live site: https://collectors-shopping-mall.herokuapp.com/
+-  live site: https://collectors-react-redux-firebase-e-commerce-store-app.vercel.app/
 
 <img src="collectors.gif" alt="application_screenshot" width="500" />
 
